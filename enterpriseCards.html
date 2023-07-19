@@ -15,29 +15,35 @@
         <h3>Servicios más demandados</h3>
         
         <article id="card_services_container">
-            <h4>MANITAS A DOMICILIO</h4>
-            <div class="card_services_profile_container">
-                <img class="card_services_profile_img" src="/Img/perroveterinaria.png" alt="foto... ">
-                <p>Pepito</p>
-                <p>Grillo</p>
-                <p>+34 786 456 344</p>
-            </div>
-            <p><img src="./Img/icon/location-dot-solid.svg" alt="Location icon" id="card_services_location_icon">Provincia</p>
-            
-            <div class="card_services_checbox_container">
-                <label><input type="checkbox" id="card_services_cbox_handy" value="Handy">MANITAS</label>
-                <input type="checkbox" id="card_services_cbox_cares" value="Cares"> <label for="cbox2">CUIDADOS</label>
-            </div>
-            <div class="card_services_checbox_container">
-                <input type="checkbox" id="card_services_cbox_accompaniment" value="Accompaniment"> <label for="cbox3">ACOMPAÑAMIENTO</label>
-                <input type="checkbox" id="card_services_cbox_paperwork" value="Paperwork"> <label for="cbox4">PAPELEO</label>
-            </div>
+            <div class="card_services_general_info">
+                <div>
+                    <h4>MANITAS A DOMICILIO</h4>
+                    <p><img src="./Img/icon/location-dot-solid.svg" alt="Location icon" id="card_services_location_icon">Provincia</p>
+                    <div class="card_services_checbox_container">
+                        <label><input type="checkbox" id="card_services_cbox_handy" value="Handy">MANITAS</label>
+                        <label><input type="checkbox" id="card_services_cbox_cares" value="Cares">CUIDADOS</label>
 
+                        <label><input type="checkbox" id="card_services_cbox_accompaniment" value="Accompaniment">ACOMPAÑAMIENTO</label>
+                        <label><input type="checkbox" id="card_services_cbox_paperwork" value="Paperwork">PAPELEO</label>
+                    </div>
+                </div>
+                <div class="card_services_profile_container">
+                    <img class="card_services_profile_img" src="/Img/perroveterinaria.png" alt="foto... ">
+                    <p>Pepito</p>
+                    <p>Grillo</p>
+                    <p>+34 786 456 344</p>
+                </div>
+            </div>
+            
+            <div class="card_services_description_container">
             <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, veniam quo ex quas tenetur aspernatur dolores reiciendis obcaecati, itaque consequatur recusandae consequuntur minima quasi cum atque dolorem! Officiis, vero optio!</p>
+            </div>
 
             <div class="card_services_likes_container">
-                <img src="./Img/icon/heart-regular.svg" alt="Heart icon" id="card_services_empty_heard_icon">
-                <div class="card_services_likes_counter">Contador LIKES</div>
+                <div>
+                    <img src="./Img/icon/heart-regular.svg" alt="Heart icon" id="card_services_empty_heard_icon">
+                    <div class="card_services_likes_counter">Contador LIKES</div>
+                </div>
                 <button class="card_service_button_contact">Ponte en contacto</button>
             </div>
         </article>
@@ -46,41 +52,53 @@
     <br>
 
     <section>
-        <form id = "formulario" class = "form" action="" method="post">
-                
+        <form id="" class = "form" action="" method="post">
+
+            <div class="form-control">
+                <label for="mensaje">Selecciona la que mas se ajuste:</label>
+                <label><input type="checkbox" id="card_services_cbox_handy" value="Handy">PROFESIONAL</label>
+                <label><input type="checkbox" id="card_services_cbox_cares" value="Cares">BUSCAS AYUDA</label>
+            </div>
+            <div class="titulo del servicio">
+                <label for="mensaje">¿Qué servicio ofreces?</label>
+                <input type="text" id="name" minlength="3"  placeholder="Escribe el servicio que ofreces "
+                title="Escribe sólo tu nombre" required >
+                <br>
+            </div>
+            
             <div class=form-control>
                 <label for="name">Nombre</label>
                 <input type="text" id="name" minlength="3"  placeholder=" Nombre "
                 title="Escribe sólo tu nombre" required >
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
                 <br>
             </div>
             <div class=form-control>
                 <label for="apellido">Apellidos</label>
                 <input type="text" id="apellido" minlength="3"  placeholder="  Apellidos"
                     title="Escribe solo tu apellido" required>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
                 <br>
             </div>
-            <!--<div class=form-control>
+            <div class=form-control>
+                <label for="name">Provincia</label>
+                <input type="text" id="name" minlength="3"  placeholder="¿En qué provincia ofreces tus servicios? "
+                title="Escribe sólo una provincia" required >
+                <br>
+            </div>
+            <div class=form-control>
                 <label for="email">Email</label>
                 <input class="email" type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
                     placeholder="hola@ejemplo.com" >
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                <br>
-            </div> -->
+            </div>
             <div class=form-control>
                 <label for="telefono">Teléfono </label>
-
                 <input  id="telefono" maxlength="12"  
                     placeholder="  +34 600 000 000" required>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
                 <br>
+            </div>
+
+            <div class=form-control>
+                <label for="foto">Fot de perfil </label>
+                <input type="file" src=""  width="48" height="48">
             </div>
         <!-- <div class=form-control>
                 <div class="mensaje">
@@ -92,7 +110,20 @@
                     <br>
                 </div>
             </div> -->
-            
+            <div class="form-control">
+                <label><input type="checkbox" id="card_services_cbox_handy" value="Handy">MANITAS</label>
+                <label><input type="checkbox" id="card_services_cbox_cares" value="Cares">CUIDADOS</label>
+
+                <label><input type="checkbox" id="card_services_cbox_accompaniment" value="Accompaniment">ACOMPAÑAMIENTO</label>
+                <label><input type="checkbox" id="card_services_cbox_paperwork" value="Paperwork">PAPELEO</label>
+            </div>
+            <div class="mensaje">
+                <label for="mensaje">Descripción</label>
+                <textarea id="mensaje" rows="35" cols="30" placeholder="Describe brevemente el servicio que ofreces" ></textarea> 
+                <br>
+            </div>
+
+
             <button class="formButton" type="submit" value="Enviar">Enviar</button> 
             <br>
         </form>
