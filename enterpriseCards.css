@@ -1,0 +1,79 @@
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #card_services_container {
+    max-width: 400px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para la imagen de perfil */
+.card_services_profile_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card_services_profile_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card_services_profile_container div {
+    margin-left: 10px;
+}
+
+  /* Estilos para la ubicación */
+  #card_services_location_icon {
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  /* Estilos para las grandes familias (checkboxes) */
+.card_services_checbox_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+  /* Estilos para el área de texto descriptivo */
+p {
+    margin: 10px 0;
+}
+
+  /* Estilos para el icono de corazón */
+  #card_services_empty_heard_icon {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  /* Estilos para el contador de likes */
+  .card_services_likes_counter {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  /* Estilos para el botón de contacto */
+  .card_service_button_contact {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .card_service_button_contact:hover {
+    background-color: #0056b3;
+  }

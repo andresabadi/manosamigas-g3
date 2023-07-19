@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./enterpriseCards.css">
+    <title>Servicios</title>
+</head>
+<body>
+    <section >
+        <h3>Servicios más demandados</h3>
+        
+        <article id="card_services_container">
+            <h4>MANITAS A DOMICILIO</h4>
+            <div class="card_services_profile_container">
+                <img class="card_services_profile_img" src="/Img/perroveterinaria.png" alt="foto... ">
+                <p>Pepito</p>
+                <p>Grillo</p>
+                <p>+34 786 456 344</p>
+            </div>
+            <p><img src="./Img/icon/location-dot-solid.svg" alt="Location icon" id="card_services_location_icon">Provincia</p>
+            
+            <div class="card_services_checbox_container">
+                <label><input type="checkbox" id="card_services_cbox_handy" value="Handy">MANITAS</label>
+                <input type="checkbox" id="card_services_cbox_cares" value="Cares"> <label for="cbox2">CUIDADOS</label>
+            </div>
+            <div class="card_services_checbox_container">
+                <input type="checkbox" id="card_services_cbox_accompaniment" value="Accompaniment"> <label for="cbox3">ACOMPAÑAMIENTO</label>
+                <input type="checkbox" id="card_services_cbox_paperwork" value="Paperwork"> <label for="cbox4">PAPELEO</label>
+            </div>
+
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, veniam quo ex quas tenetur aspernatur dolores reiciendis obcaecati, itaque consequatur recusandae consequuntur minima quasi cum atque dolorem! Officiis, vero optio!</p>
+
+            <div class="card_services_likes_container">
+                <img src="./Img/icon/heart-regular.svg" alt="Heart icon" id="card_services_empty_heard_icon">
+                <div class="card_services_likes_counter">Contador LIKES</div>
+                <button class="card_service_button_contact">Ponte en contacto</button>
+            </div>
+        </article>
+    </section>
+
+    <br>
+
+    <section>
+        <form id = "formulario" class = "form" action="" method="post">
+                
+            <div class=form-control>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" minlength="3"  placeholder=" Nombre "
+                title="Escribe sólo tu nombre" required >
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <br>
+            </div>
+            <div class=form-control>
+                <label for="apellido">Apellidos</label>
+                <input type="text" id="apellido" minlength="3"  placeholder="  Apellidos"
+                    title="Escribe solo tu apellido" required>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                <br>
+            </div>
+            <!--<div class=form-control>
+                <label for="email">Email</label>
+                <input class="email" type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                    placeholder="hola@ejemplo.com" >
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                <br>
+            </div> -->
+            <div class=form-control>
+                <label for="telefono">Teléfono </label>
+
+                <input  id="telefono" maxlength="12"  
+                    placeholder="  +34 600 000 000" required>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                <br>
+            </div>
+        <!-- <div class=form-control>
+                <div class="mensaje">
+                    <label for="mensaje">Comentario</label>
+                    <textarea id="mensaje" rows="35" cols="35" placeholder="  Escribe aquí tus dudas" ></textarea> 
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    <br>
+                </div>
+            </div> -->
+            
+            <button class="formButton" type="submit" value="Enviar">Enviar</button> 
+            <br>
+        </form>
+    </section>
+</body>
+</html>
