@@ -7,12 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./enterpriseCards.css">
+    <link rel="stylesheet" href="./services.css">
     <title>Servicios</title>
 </head>
 <body>
+    <input class="services_search" type="text" placeholder="busca un servicio.."> 
+
     <section >
-        <h3>Servicios más demandados</h3>
+        <h3>SERVICIOS MAS DEMANDADOS</h3>
         
         <article id="card_services_container">
             <div class="card_services_general_info">
@@ -44,87 +46,82 @@
                     <img src="./Img/icon/heart-regular.svg" alt="Heart icon" id="card_services_empty_heard_icon">
                     <div class="card_services_likes_counter">Contador LIKES</div>
                 </div>
-                <button class="card_service_button_contact">Ponte en contacto</button>
+                <button class="card_services_button_contact">Ponte en contacto</button>
             </div>
         </article>
     </section>
 
     <br>
 
-    <section>
-        <form id="" class = "form" action="" method="post">
+    <section id="form_services_container">
 
-            <div class="form-control">
-                <label for="mensaje">Selecciona la que mas se ajuste:</label>
-                <label><input type="checkbox" id="card_services_cbox_handy" value="Handy">PROFESIONAL</label>
-                <label><input type="checkbox" id="card_services_cbox_cares" value="Cares">BUSCAS AYUDA</label>
+        <h3>OFRECE TUS SERVICIOS</h3>
+
+        <form id="form_services_form" class="form" action="" method="post">
+            <div class="form_services_divs">
+                <label for="form_group">Selecciona la que mas se ajuste:</label>
+                <div class="form_group_container">
+                    <label><input type="checkbox" id="form_checkbox_profesional" value="Handy">PROFESIONAL</label>
+                    <label><input type="checkbox" id="card_checkbox_help" value="Cares">BUSCAS AYUDA</label>
+                </div>
             </div>
-            <div class="titulo del servicio">
-                <label for="mensaje">¿Qué servicio ofreces?</label>
-                <input type="text" id="name" minlength="3"  placeholder="Escribe el servicio que ofreces "
-                title="Escribe sólo tu nombre" required >
+            <div class="form_services_divs">
+                <label for="form_service_title">¿Qué servicio ofreces?</label>
+                <input type="text" id="form_service_title" minlength="3"  placeholder="Escribe el servicio que ofreces "
+                title="Escribe el servicio que ofreces" required >
                 <br>
             </div>
             
-            <div class=form-control>
-                <label for="name">Nombre</label>
-                <input type="text" id="name" minlength="3"  placeholder=" Nombre "
+            <div class="form_services_divs">
+                <label for="form_name">Nombre</label>
+                <input type="text" id="form_name" minlength="3"  placeholder="Nombre"
                 title="Escribe sólo tu nombre" required >
                 <br>
             </div>
-            <div class=form-control>
-                <label for="apellido">Apellidos</label>
-                <input type="text" id="apellido" minlength="3"  placeholder="  Apellidos"
+            <div class="form_services_divs">
+                <label for="form_surname">Apellidos</label>
+                <input type="text" id="form_surname" minlength="3"  placeholder="Apellido"
                     title="Escribe solo tu apellido" required>
                 <br>
             </div>
-            <div class=form-control>
-                <label for="name">Provincia</label>
-                <input type="text" id="name" minlength="3"  placeholder="¿En qué provincia ofreces tus servicios? "
+            <div class="form_services_divs">
+                <label for="form_place">Provincia</label>
+                <input type="text" id="form_place" minlength="3"  placeholder="¿En qué provincia ofreces tus servicios? "
                 title="Escribe sólo una provincia" required >
                 <br>
             </div>
-            <div class=form-control>
-                <label for="email">Email</label>
-                <input class="email" type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+            <div class="form_services_divs">
+                <label for="form_email">Email</label>
+                <input class="form_email" type="email" id="form_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
                     placeholder="hola@ejemplo.com" >
             </div>
-            <div class=form-control>
-                <label for="telefono">Teléfono </label>
-                <input  id="telefono" maxlength="12"  
+            <div class="form_services_divs">
+                <label for="form_telephone">Teléfono </label>
+                <input  id="form_telephone" maxlength="12"  
                     placeholder="  +34 600 000 000" required>
                 <br>
             </div>
 
-            <div class=form-control>
-                <label for="foto">Fot de perfil </label>
+            <div class="form_services_divs">
+                <label for="form_picture">Foto de perfil </label>
                 <input type="file" src=""  width="48" height="48">
             </div>
-        <!-- <div class=form-control>
-                <div class="mensaje">
-                    <label for="mensaje">Comentario</label>
-                    <textarea id="mensaje" rows="35" cols="35" placeholder="  Escribe aquí tus dudas" ></textarea> 
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
-                    <br>
-                </div>
-            </div> -->
-            <div class="form-control">
+            <div class="form_services_divs">
+                <label for="form_workarea">¿A qué grupo pertenece el servicio que ofreces? </label>
                 <label><input type="checkbox" id="card_services_cbox_handy" value="Handy">MANITAS</label>
                 <label><input type="checkbox" id="card_services_cbox_cares" value="Cares">CUIDADOS</label>
 
                 <label><input type="checkbox" id="card_services_cbox_accompaniment" value="Accompaniment">ACOMPAÑAMIENTO</label>
                 <label><input type="checkbox" id="card_services_cbox_paperwork" value="Paperwork">PAPELEO</label>
             </div>
-            <div class="mensaje">
-                <label for="mensaje">Descripción</label>
-                <textarea id="mensaje" rows="35" cols="30" placeholder="Describe brevemente el servicio que ofreces" ></textarea> 
+            <div class="form_services_divs">
+                <label for="form_description">Descripción</label>
+                <textarea id="form_description" rows="35" cols="30" placeholder="Describe brevemente el servicio que ofreces" ></textarea> 
                 <br>
             </div>
 
 
-            <button class="formButton" type="submit" value="Enviar">Enviar</button> 
+            <button class="form_button" type="submit" value="Enviar">Enviar</button> 
             <br>
         </form>
     </section>

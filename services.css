@@ -1,10 +1,20 @@
+/*SEARCH*/
+.services_search {
+  width: 90%; 
+  max-width: 500px;
+  margin: 40px 0; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 20px;
+  font-size: 16px; 
+}
 
+/*CARD*/
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .card_services_general_info{
     display: flex;
     justify-content: space-between;
@@ -75,6 +85,7 @@ p {
 .card_services_likes_container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
 }
 
@@ -92,7 +103,7 @@ p {
   }
 
   /* Estilos para el botón de contacto */
-  .card_service_button_contact {
+  .card_services_button_contact {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -102,6 +113,81 @@ p {
     transition: background-color 0.3s;
   }
 
-  .card_service_button_contact:hover {
+  .card_services_button_contact:hover {
     background-color: #0056b3;
   }
+
+
+/*FORMULARIO*/
+
+/* Estilos generales para la sección del formulario */
+#form_services_container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow-x: hidden; /* Evitar el desbordamiento horizontal */
+}
+
+/* Estilos para cada área del formulario */
+.form_services_divs {
+  margin-bottom: 20px;
+  width: 100%; /* Ajustar el ancho al 100% */
+  box-sizing: border-box; /* Incluir padding y borde en el ancho */
+}
+
+.form_services_divs label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form_services_divs input[type="text"],
+.form_services_divs input[type="email"],
+.form_services_divs textarea,
+.form_services_divs input[type="file"],
+.form_services_divs input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Incluir padding y borde en el ancho */
+}
+
+.form_services_divs textarea {
+  resize: vertical;
+}
+
+.form_group_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para el botón del formulario */
+.form_button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.form_button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el encabezado del formulario */
+#form_services_form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para separar visualmente las áreas */
+.form_services_divs:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
