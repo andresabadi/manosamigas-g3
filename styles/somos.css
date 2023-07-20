@@ -1,10 +1,14 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> somos/geo
-#somos-imgs{
+#somos-section {
     display: flex;
-    width: 75vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+} 
+
+#somos-imgs{
+    /* width: 90vw; */
+    display: flex;
     margin: 0 auto;
 }
 
@@ -17,7 +21,15 @@
 }
 
 #somos-imgs img:hover{
-    width: 20vw;
+    width: 10vw;
     opacity: 1;
     filter: contrast(120%);
+}
+
+.box {
+    /* width: 90%; */
+    border:1px solid var(--color-gris-oscuro);
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
 }
