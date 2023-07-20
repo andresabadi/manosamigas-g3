@@ -1,0 +1,64 @@
+#check {
+    display: none;
+}
+#mainphoto{
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .logo {
+      width: 60px;
+      
+        border-radius: 100px;
+        margin-right: 6px;
+    }
+
+    .hamburguesa {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        margin-left: 70px;
+        margin-top: -35px;
+    }
+
+    label.checkbtn {
+        display: flex;
+        margin: auto;
+        padding: auto;
+    }
+    
+    nav ul {
+        position: fixed;
+        width: 412px;
+        top: 83px;
+        /* right: 387px; */
+        height: auto;
+        background: #d9d9d9;
+        /* top: 60px; */
+        left: 100%;
+        text-align: center;
+        z-index: 100;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
