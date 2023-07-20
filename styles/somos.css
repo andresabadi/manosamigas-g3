@@ -1,0 +1,19 @@
+#somos-imgs{
+    display: flex;
+    width: 75vw;
+    margin: 0 auto;
+}
+
+#somos-imgs img{
+    width: 0;
+    flex-grow: 0.5;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s ease;
+}
+
+#somos-imgs img:hover{
+    width: 20vw;
+    opacity: 1;
+    filter: contrast(120%);
+}
