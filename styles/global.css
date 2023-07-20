@@ -1,0 +1,15 @@
+*{
+    font-family: var(--main-font);
+    background-color: var(--body-background-color);
+    color:var(--text-color);
+    padding:0;
+    margin:0;
+}
+h1{
+    font-size: 2rem;
+    color:var(--color-azul)
+}
+h2{
+    font-size: 1rem;
+    color:var(--color-rosa)
+}
