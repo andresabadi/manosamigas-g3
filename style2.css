@@ -306,14 +306,14 @@ p {
   
   .card_services_profile_container p{
       line-height: 2px;
-  }
+  } 
   
     / Estilos para la ubicación /
     #card_services_location_icon {
       width: 16px;
       vertical-align: middle;
       margin-right: 5px;
-    }
+    } 
   
     / Estilos para las grandes familias (checkboxes) /
    .card_services_checbox_container {
