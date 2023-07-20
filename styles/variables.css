@@ -2,7 +2,8 @@
     --body-bg-color: white;
     --text-color:black ;
     --color-rosa: #ED117F;
-    --color-azul: #4DA3DF;
+    /*--color-azul: #4DA3DF;*/
+    --color-azul: #4695ca;
     --color-amarillo: #FFBD59;
     --main-font:  "Lato", sans-serif;
 }
