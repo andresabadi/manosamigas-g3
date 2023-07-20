@@ -1,3 +1,11 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;
+    height: 150px;
+}
+
 nav ul {
     position: fixed;
     width: 100%;
@@ -22,9 +30,13 @@ nav ul li a {
     color: black;
 }
 
-
 .hamburguesa {
     width: 32px;
     height: 32px; 
     margin-right: 10px;
+}
+
+.logo {
+    border-radius: 100px;
+    margin-right: 60px;
 }

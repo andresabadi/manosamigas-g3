@@ -1,0 +1,10 @@
+.footer-ezquierda img {
+    width: 100px;
+    border-radius: 100%;
+    margin-top: 2%;
+}
+
+.footer-menu {
+    text-decoration: underline;
+    line-height: 2rem;
+}	
