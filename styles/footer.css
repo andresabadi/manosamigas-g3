@@ -1,10 +1,18 @@
-.footer-ezquierda img {
-    width: 100px;
-    border-radius: 100%;
-    margin-top: 2%;
+footer{
+    background-color: var(--color-gris-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
-
-.footer-menu {
-    text-decoration: underline;
-    line-height: 2rem;
-}	
+#newsletter div{
+    width:50vw;
+    display:flex;
+}
+#newsletter img {
+    width: 24px;
+}
+#newsletter div form {
+    border: 1px solid red;
+    width:70%;
+}
