@@ -7,7 +7,7 @@
 } 
 
 #somos-imgs{
-    width: 90vw;
+    /* width: 90vw; */
     display: flex;
     margin: 0 auto;
 }
@@ -27,7 +27,7 @@
 }
 
 .box {
-    width: 90%;
+    /* width: 90%; */
     border:1px solid var(--color-gris-oscuro);
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
