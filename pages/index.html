@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/variables.css">
     <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/index.css">    
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/nav&footer.css">    
     <title>Manos Amigas</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="#" class="enlace">
+            <a href="./index.html" class="enlace">
                 <img src="../Img/C72A1953-5643-4AD5-B68B-E8BB0D2B4E80.png" alt="" class="logo">
             </a>
             <input type="checkbox" id="check">
@@ -24,12 +25,12 @@
                 <img class="hamburguesa" src="../Img/barra-de-menus.png" >
             </label>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">¿Quienes somos?</a></li>
-                <li><a href="#">Necesito un Servicio</a></li>
-                <li><a href="#">Quiero ofrecer un Servicio</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./somos.html">¿Quienes somos?</a></li>
+                <li><a href="./services.html">Necesito un Servicio</a></li>
+                <li><a href="./ofrece-tus-servicios.html">Quiero ofrecer un Servicio</a></li>
+                <li><a href="./contactanos.html">Contacto</a></li>
+                <li><a href="./como-funcionamos.html">¿Como funcionamos?</a></li>
             </ul>
         </nav>
     </header>
@@ -37,44 +38,36 @@
         <input type="text" id="keyword" placeholder="Buscar palabras clave...">
         <button class="search-btn" onclick="searchKeyword()">BUSCAR</button>
       </div>
-    <div class="carousel-container">
-        <div class="carousel">
-          <img src="../Img/imagen1.png" alt="Imagen 1">
-          <img src="../Img/imagen1.png" alt="Imagen 2">
-          <img src="../Img/imagen1.png" alt="Imagen 3">
-        </div>
-      </div>
-
-
-    
+      <img src="../Img/imagen1.png" alt="Imagen 1" id="mainphoto">
+     
 
     <div class="btnMobileServices">
         <div>
-            <h3>Servicios mas demandados</h3>
+            <h3>SERVICIOS MAS DEMANDADOS</h3>
         </div>
-        <hr> 
         
-        <div class="cardMobile">
+        
+       <a href="./services.html"> <div class="cardMobile">
             <img class="fotoServicios" src="../Img/Electricista.png" alt="">
-            <span>Manitas</span>
-           
-        </div>
-        <div class="cardMobile">
-            <img class="fotoServicios" src="../Img/Acompañamiento.png" alt="">
-            <span>Acompañamiento</span>
-            
-        </div>
-        <div class="cardMobile">
-            <img class="fotoServicios" src="../Img/Cuidados.png" alt="">
-            <span>Cuidados</span>
-            
-        </div>
-        <div class="cardMobile">
-            <img class="fotoServicios" src="../Img/legal 1.png" alt="">
-            <span>Legal y papeleo</span>
-        </div>
+            <span>Manitas</span> 
+        </div></a>
 
-        <button class="btnMobile">Descubre los servicios</button>
+        <a href="./services.html"> <div class="cardMobile">
+                <img class="fotoServicios" src="../Img/Acompañamiento.png" alt="">
+            <span>Acompañamiento</span>            
+        </div></a>
+
+        <a href="./services.html"> <div class="cardMobile">
+                <img class="fotoServicios" src="../Img/Cuidados.png" alt="">
+            <span>Cuidados</span>            
+        </div></a>
+
+        <a href="./services.html"> <div class="cardMobile">
+                <img class="fotoServicios" src="../Img/legal 1.png" alt="">
+            <span>Trámites</span>
+        </div></a>
+
+        <a href="./services.html"><button class="btnMobile">Descubre los servicios</button></a>
     </div>
 
 <footer>

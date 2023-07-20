@@ -1,103 +1,6 @@
 /*--------------Estilos generales--------------*/
 
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-}
-
-body {
-    background-color: #D7C2C2;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 2rem;
-    text-align: left;
-}
-/* 
-.footer-ezquierda img {
-    width: 100px;
-    border-radius: 100%;
-    margin-top: 2%;
-} */
-
-.footer-menu {
-    text-decoration: underline;
-    line-height: 2rem;
-}	
-
-
-
-#check {
-    display: none;
-}
-
-/*MOVIL*/
-    /*----------MENU MOVIL--------- */
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 5%;
-    }
-
-
-
-    .logo {
-      width: 60px;
-      
-        border-radius: 100px;
-        margin-right: 60px;
-    }
-
-    .hamburguesa {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        margin-left: 70px;
-        margin-top: -35px;
-    }
-
-    label.checkbtn {
-        display: flex;
-        margin: auto;
-        padding: auto;
-    }
-    
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #d9d9d9;
-        top: 150px;
-        left: 100%;
-        text-align: center;
-        transition: all .5s;
-    }
-
-    nav ul li {
-        display: block;
-        margin-top: 10%;
-        padding-bottom: 10%;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: black;
-    }
-    .search-container{
-      margin: 20px auto;
-    }
-
-    #check:checked~ul {
-        left: 0;
-    }
-
+   
     p.author a {
         text-decoration: none;
         font-weight: 700;
@@ -121,6 +24,7 @@ p {
         border-radius: 10px;
         font-size: 1rem;
         font-weight: bold;
+        margin-left: 90px;
     }
 
     .cardMobile {
@@ -138,62 +42,15 @@ p {
         line-height: 2rem;
     }
 
+    h3{
+      margin-bottom: 20px ;
+      margin-left: 40px;
 
-
-    
-    /*----------FOOTER--------- */
-
-    footer {
-        display: flex;
-        justify-content: space-around;
-        background-color: #D9D9D9;
-        padding: 5%;
     }
-    
-
-    footer ul li {
-        font-size: 0.9rem;
-    }
-
-    .footer-derecha {
-        padding-top: 5%;
-    }
-
-    .footer-media {
-        text-align: center;
-        padding-top: 5%;
-    }
-
-    .fa-brands {
-        padding-top: 2%;
-        color: black;
-        font-size: 1.5rem;
-    }
-
-    .img-footer{
-      width: 80px;
-    }
-
-/* .carousel-container {
-    width: 300px;
-    margin: 0 auto;
-    overflow: hidden;
-  } */
-
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-
-  .carousel img {
-    width: 390px;
-    height: auto;
-  }
-  body {
-    background-color: #f5f5f5;
-  }
+ 
   
   /*SEARCH*/
+  
   .services_search {
     width: 90%; 
     max-width: 500px;
@@ -204,215 +61,21 @@ p {
     font-size: 16px; 
   }
   .search-btn{
-    background-color: var(--body-bg-color);
+    background-color: var(white);
+    border: 1px solid black;
     color: var(--text-color);
+    padding: 4px;
+    border-radius: 6px;
+  }
+  #keyword{
+    width: 250px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  .search-container{
+    width: fit-content;
+    margin: 20px auto;
   }
   
-  
-  /*CARD*/
-  article{
-    margin: 20px;
-  }
-  #card_services_container {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-  }
 
-  /* Estilos para los elementos generales de información */
-  .card_services_general_info {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  /* Estilos para el contenedor de los checkboxes */
-  .card_services_checbox_container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Estilos para los checkboxes y sus etiquetas */
-  .card_services_checbox_container label {
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  /* Estilos para el contenedor del perfil */
-  .card_services_profile_container {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Estilos para la imagen del perfil */
-  .card_services_profile_img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-
-  /* Estilos para el contenedor de la descripción */
-  .card_services_description_container {
-    margin: 10px 0;
-  }
-
-  /* Estilos para el contenedor de los likes */
-  .card_services_likes_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
- 
-
-  /* Estilos para el botón de contacto */
-  .card_services_button_contact {
-    padding: 8px 12px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  /* section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .card_services_general_info{
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    #card_services_container {
-      max-width: 400px;
-      border: 1px solid #ccc;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-    }
-  
-    /Estilos para la imagen de perfil /
-  .card_services_profile_img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-  }
-  
-  .card_services_profile_container {
-      width: 40%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 10px;
-  }
-  
-  .card_services_profile_container div {
-      margin-left: 10px;
-  }
-  
-  .card_services_profile_container p{
-      line-height: 2px;
-  } 
-  
-    / Estilos para la ubicación /
-    #card_services_location_icon {
-      width: 16px;
-      vertical-align: middle;
-      margin-right: 5px;
-    } 
-  
-    / Estilos para las grandes familias (checkboxes) /
-   .card_services_checbox_container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin: 20px 0;
-  } 
-    / Estilos para el área de texto descriptivo /
-  
-  .card_services_description_container{
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 10px;
-  
-  }
-  p {
-      margin: 10px 0;
-  } */
-  
-    /* Estilos para el contenedor likes y boton */
-  
-    .card_services_likes_container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #f2f2f2;
-        border-radius: 10px;
-        padding: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        max-width: 300px; /* Ajusta el ancho según tus necesidades */
-        margin: 10px auto; /* Para centrar horizontalmente, puedes ajustar los márgenes según el diseño deseado */
-      }
-      
-      .card_services_likes_container svg {
-        width: 24px; /* Ajusta el tamaño del icono según tus necesidades */
-        height: 24px;
-        margin-right: 5px;
-      }
-      
-      .card_services_likes_counter {
-        font-size: 16px;
-        color: #333;
-      }
-      
-      .card_services_button_contact {
-        background-color: #333;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      
-      .card_services_button_contact:hover {
-        background-color: #555;
-      }
-    h1 {
-        margin: 0;
-      }
-      
-      .search-container {
-        display: flex;
-        align-items: center;
-        background-color: #f2f2f2;
-        padding: 10px;
-      }
-      
-      input[type="text"] {
-        flex: 1;
-        padding: 5px;
-        border: none;
-        border-radius: 5px 0 0 5px;
-        outline: none;
-      }
-      
-      button {
-        background-color: #444;
-        color: #fff;
-        border: none;
-        padding: 5px 10px;
-        border-radius: 0 5px 5px 0;
-        cursor: pointer;
-      }
-      
-      button:hover {
-        background-color: #555;
-      }
+   

@@ -10,12 +10,32 @@
     <link rel="stylesheet" href="../styles/variables.css">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/services.css">
+    <link rel="stylesheet" href="../styles/nav&footer.css">
     <title>Servicios</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="./index.html" class="enlace">
+                <img src="../Img/C72A1953-5643-4AD5-B68B-E8BB0D2B4E80.png" alt="" class="logo">
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img class="hamburguesa" src="../Img/barra-de-menus.png" >
+            </label>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./somos.html">¿Quienes somos?</a></li>
+                <li><a href="./services.html">Necesito un Servicio</a></li>
+                <li><a href="./ofrece-tus-servicios.html">Quiero ofrecer un Servicio</a></li>
+                <li><a href="./contactanos.html">Contacto</a></li>
+                <li><a href="./como-funcionamos.html">¿Como funcionamos?</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="services_search_container">
         <input class="services_search" type="text" placeholder="busca un servicio.."> 
-        <div>
+        <div class="service-filters">
             <button class="btn-filter">MANITAS</button>
             <button class="btn-filter">ACOMPAÑAMIENTO</button>
             <button class="btn-filter">CUIDADOS</button>
@@ -51,10 +71,22 @@
 
                 <div class="card_services_likes_container">
                     <div>
-                        <img src="../Img/icon/heart-regular.svg" alt="Heart icon" id="card_services_empty_heard_icon">
-                        <div class="card_services_likes_counter">Contador LIKES</div>
+                      <div class="post">
+                        <button class="like-button">
+                          <span class="icon">&#10084;</span>
+                        </button>
+                      </div>
+                      <div class="likes-count-container">
+                        <span class="likes-count">0</span> Likes
+                      </div>
                     </div>
-                    <button class="card_services_button_contact">Contacto</button>
+                    <div class="notifications">
+                      <h2>Notificaciones</h2>
+                      <ul id="notifications-list"></ul>
+                      <div class="notification-message" style="display: none;"></div>
+                    </div>
+                  </div>
+                   <a href="./contactanos.html"> <button class="card_services_button_contact">Ponte en contacto</button></a>
                 </div>
             </article>
 
@@ -88,11 +120,22 @@
 
                 <div class="card_services_likes_container">
                     <div>
-                        <img src="../Img/icon/heart-regular.svg" alt="Heart icon" id="card_services_empty_heard_icon">
-                        <div class="card_services_likes_counter">Contador LIKES</div>
+                      <div class="post">
+                        <button class="like-button">
+                          <span class="icon">&#10084;</span>
+                        </button>
+                      </div>
+                      <div class="likes-count-container">
+                        <span class="likes-count">0</span> Likes
+                      </div>
                     </div>
-                    <button class="card_services_button_contact">Contacto</button>
-                </div>
+                    <div class="notifications">
+                      <h2>Notificaciones</h2>
+                      <ul id="notifications-list"></ul>
+                      <div class="notification-message" style="display: none;"></div>
+                    </div>
+                  </div>
+                  <a href="./contactanos.html"> <button class="card_services_button_contact">Ponte en contacto</button></a>                </div>
             </article>
 
             <br>
@@ -120,14 +163,25 @@
                 <div class="card_services_description_container">
                 <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, veniam quo ex quas tenetur aspernatur dolores reiciendis obcaecati, itaque consequatur recusandae consequuntur minima quasi cum atque dolorem! Officiis, vero optio!</p>
                 </div>
-
                 <div class="card_services_likes_container">
                     <div>
-                        <img src="../Img/icon/heart-regular.svg" alt="Heart icon" id="card_services_empty_heard_icon">
-                        <div class="card_services_likes_counter">Contador LIKES</div>
+                      <div class="post">
+                        <button class="like-button">
+                          <span class="icon">&#10084;</span>
+                        </button>
+                      </div>
+                      <div class="likes-count-container">
+                        <span class="likes-count">0</span> Likes
+                      </div>
                     </div>
-                    <button class="card_services_button_contact">Contacto</button>
-                </div>
+                    <div class="notifications">
+                      <h2>Notificaciones</h2>
+                      <ul id="notifications-list"></ul>
+                      <div class="notification-message" style="display: none;"></div>
+                    </div>
+                  </div>
+                      
+                  <a href="./contactanos.html"> <button class="card_services_button_contact">Ponte en contacto</button></a>                </div>
             </article>
             <br>
 
@@ -157,16 +211,49 @@
 
                 <div class="card_services_likes_container">
                     <div>
-                        <img src="../Img/icon/heart-regular.svg" alt="Heart icon" id="card_services_empty_heard_icon">
-                        <div class="card_services_likes_counter">Contador LIKES</div>
+                      <div class="post">
+                        <button class="like-button">
+                          <span class="icon">&#10084;</span>
+                        </button>
+                      </div>
+                      <div class="likes-count-container">
+                        <span class="likes-count">0</span> Likes
+                      </div>
                     </div>
-                    <button class="card_services_button_contact">Contacto</button>
+                    <div class="notifications">
+                      <h2>Notificaciones</h2>
+                      <ul id="notifications-list"></ul>
+                      <div class="notification-message" style="display: none;"></div>
+                    </div>
+                  </div>
+                  <a href="./contactanos.html"> <button class="card_services_button_contact">Ponte en contacto</button></a>                </div>
+                   
                 </div>
             </article>
     </div>
 </section>
-
-<br>
-
+<footer>
+  <div class="footer-ezquierda">
+     
+      <img class="img-footer" src="../Img/C72A1953-5643-4AD5-B68B-E8BB0D2B4E80.png" alt="logo">
+  </div>
+  <div class="footer-derecha">
+      
+      <ul class="footer-menu">
+          <li>FAQS</li>
+          <li>Condiciones de devoluciones</li>
+          <li>Política de devoluciones</li>
+          <li>Política de privacidad</li>
+          <li>Política de cookies</li>
+          <li>Aviso Legal</li>
+      </ul>
+      <div class="footer-media">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://web.telegram.org/k/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+</footer>
+<script src="../service.js"></script>
 </body>
 </html>

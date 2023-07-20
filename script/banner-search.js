@@ -1,4 +1,4 @@
-const carousel = document.querySelector('.carousel');
+/*const carousel = document.querySelector('.carousel');
 const images = document.querySelectorAll('.carousel img');
 
 const totalImages = images.length;
@@ -19,7 +19,7 @@ function showNextImage() {
 moveCarousel();
 
 // Intervalo para cambiar automáticamente las imágenes cada 3 segundos
-setInterval(showNextImage, 3000);
+setInterval(showNextImage, 3000); */
 
 //BUSCADOR//
 function searchKeyword() {
