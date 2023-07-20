@@ -1,7 +1,13 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
     padding: 20px;
 }
 
@@ -9,9 +15,12 @@ h1 {
     text-align: center;
 }
 
-form {
+.serviceForm {
     display: flex;
     flex-direction: column;
+    max-width: 600px;
+   width: 80%;
+    margin: 20%;
 }
 
 label {
@@ -19,19 +28,25 @@ label {
 }
 
 input,
-textarea {
-    width: 100%;
-    padding: 5px;
+textarea,
+select {
+    font-size: 14px;
+    padding: 8px;
     margin-top: 5px;
+    width: 100%; 
 }
 
-button {
+button[type="submit"] {
+    font-size: 16px;
+    padding: 10px;
     margin-top: 10px;
     cursor: pointer;
+    color:red;
+    margin-left: 50%;
 }
 
 #notification {
-    display: none; /* Agregamos "display: none;" para ocultar la notificación */
+    display: none;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px;
@@ -41,3 +56,27 @@ button {
 .hidden {
     display: none;
 }
+
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        height: 100vh; 
+    
+    }
+
+    .serviceForm {
+
+        margin-left: 20%;
+        padding: 10px;
+        width: 80%;
+    }
+    
+}
+
+
+
+
