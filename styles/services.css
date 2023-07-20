@@ -122,13 +122,22 @@ p {
 
   /* Estilos para el botón de contacto */
   .card_services_button_contact {
-    background-color: var(--accent-color);
-    color: #fff;
+    background-color: var(--color-rosa);
+    color: var(--body-bg-color);
     border: none;
+    font-weight: bold;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+  }
+  .btn-filter{
+    cursor: pointer;
+    font-weight: 500;
+    background-color: var(--color-azul);
+    color: var(--body-bg-color);
+    padding: 3px;
+    border-radius: 4px;
   }
 
  .card_services_button_contact:hover {

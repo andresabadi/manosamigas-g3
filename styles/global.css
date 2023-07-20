@@ -19,13 +19,13 @@ h1{
 h2{
     width:100%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color:var(--color-rosa)
 }
 
 h3{
-    font-size: 0.8rem;
-    color:var(--color-yellow)
+    font-size: 1.2rem;
+    color:var(--color-gris-oscuro);
 }
 
 input {
@@ -33,4 +33,7 @@ input {
     border: 1px solid #000;
     background: #FFF;
     box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+hr{
+    margin-bottom: 10px;
 }
