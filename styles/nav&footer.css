@@ -62,3 +62,40 @@
     #check:checked~ul {
         left: 0;
     }
+        /*----------FOOTER--------- */
+        .footer-menu {
+            text-decoration: underline;
+            line-height: 2rem;
+        }	
+      
+          footer {
+              display: flex;
+              justify-content: space-around;
+              background-color: #D9D9D9;
+              padding: 5%;
+          }
+          
+      
+          footer ul li {
+              font-size: 0.9rem;
+          }
+      
+          .footer-derecha {
+              padding-top: 5%;
+          }
+      
+          .footer-media {
+              text-align: center;
+              padding-top: 5%;
+          }
+      
+          .fa-brands {
+              padding-top: 2%;
+              color: black;
+              font-size: 1.5rem;
+          }
+      
+          .img-footer{
+            width: 80px;
+          }
+      

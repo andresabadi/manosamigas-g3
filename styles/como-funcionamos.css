@@ -1,20 +1,3 @@
-:root {
-    --body-bg-color: white;
-    --text-color: black;
-    --color-rosa: #ED117F;
-    --color-azul: #4DA3DF;
-    --color-azul: #4695ca;
-    --color-amarillo: #FFBD59;
-    --main-font: "Lato", sans-serif;
-}
-
-* {
-    font-family: var(--main-font);
-    /*background-color: var(--body-bg-color);*/
-    color: var(--text-color);
-    padding: 0;
-    margin: 0;
-}
 
 .operate-header {
     display: flex;
@@ -35,6 +18,16 @@
 .operate-header p{
     font-size: 20px;
     margin-left: 30px;
+}
+.container-como-funcionamos{
+  border: 1px solid black;
+  border-radius: 40px;
+  margin: 0px 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
 }
 
 
