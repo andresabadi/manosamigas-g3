@@ -1,3 +1,19 @@
+:root {
+  --body-bg-color: #f5f5f5;
+  --footer-bg-color: #202027;
+  --text-color:white;
+  --accent-color: #ef1783;
+  --btn-hover-color: #4ca1e005;
+  --circle1-color:#bc3a801a;
+  --circle2-color:#3457b21a;
+}
+*{
+  font-family: 'Lato', sans-serif;
+}
+body {
+  background-color: var(--body-bg-color);
+}
+
 /*SEARCH*/
 .services_search {
   width: 90%; 
@@ -27,6 +43,7 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    background-color: var(--btn-hover-color);
   }
 
   /* Estilos para la imagen de perfil */
@@ -74,7 +91,7 @@ section {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
-
+    background-color: var(--body-bg-color);
 }
 p {
     margin: 10px 0;
@@ -104,7 +121,7 @@ p {
 
   /* Estilos para el botón de contacto */
   .card_services_button_contact {
-    background-color: #007bff;
+    background-color: var(--accent-color);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -113,9 +130,93 @@ p {
     transition: background-color 0.3s;
   }
 
-  .card_services_button_contact:hover {
-    background-color: #0056b3;
+ .card_services_button_contact:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px #ef1783;
+    font-weight: bold;
+    color: #ef1783;
+  } 
+
+ /* .card_services_button_contact:hover {
+    background-color: #f5f5f5;
+    color: #ef1783;
+    font-weight: bold;
+    box-shadow: 0 2px 4px #00000050;
+  } */
+
+
+
+/*QUERIES*/
+
+/* Estilos para dispositivos de escritorio con anchura mínima de 1024px */
+@media (min-width: 1024px) {
+  /* Agrega aquí tus estilos específicos para dispositivos de escritorio */
+  body {
+    font-size: 16px; /* Por ejemplo, puedes aumentar el tamaño de fuente para pantallas más grandes */
   }
+
+  .container {
+    max-width: 960px; /* Por ejemplo, puedes limitar el ancho del contenido principal */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+  }
+
+  /* Agrega más estilos aquí según tus necesidades */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*FORMULARIO*/
