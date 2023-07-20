@@ -12,7 +12,7 @@ function toggleLike() {
   } else {
     likeButton.classList.add('liked');
     likesCount++;
-    showNotification('¡Has valorado positivamente a un profesional!');
+    showNotification('¡Has valorado al profesional de forma positiva!');
   }
 
   likesCountElement.textContent = likesCount;
@@ -26,5 +26,5 @@ function showNotification(message) {
   // Eliminar la notificación después de 3 segundos
   setTimeout(() => {
     notification.remove();
-  }, 3000);
+  }, 7000);
 }
