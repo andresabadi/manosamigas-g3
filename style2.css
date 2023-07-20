@@ -28,14 +28,7 @@ p {
     line-height: 2rem;
 }	
 
-.fotogrande {
-    background-image: url(/Img/jametlene-reskp-fliwkBbS7oM-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 300px;
-}
+
 
 #check {
     display: none;
@@ -43,13 +36,6 @@ p {
 
 /*MOVIL*/
 
-@media (max-width: 576px) {
-    
-    h3 {
-        font-size: 1.2rem;
-        line-height: 2rem;
-        text-align: center;
-    }
 
     /*----------MENU MOVIL--------- */
 
@@ -101,149 +87,18 @@ p {
         color: black;
     }
 
-    li a.active {
-        color: #B2709F;
-    }
+   
 
     #check:checked~ul {
         left: 0;
     }
-    
-    .search {
-        display: none;
-    }
 
-    .header-section {
-        margin: auto;
-    }
-
-    .header-section div {
-        position: relative;
-    }
-
-    .header-section p   {
-        position: absolute;
-        top: 1px;
-        right: 1px;
-        background-color: #fff;
-        padding: 2px 7px;
-        border-radius: 50%;
-        color: #b2709f;
-        font-weight: 700;
-        line-height: 18px;
-    }
-
-    .cart-products  {
-        position: absolute!important;
-        top: 90px;
-        right: 20px;
-        background-color: #fff;
-        padding: 4%;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
-        display: none;
-        min-width: 200px;
-        max-width: 300px;
-        border-radius: 10px;
-    }
-
-        /*-----CARRITO FLOTANTE------*/
-
-    .cart-products .item img{
-        width: 100px;
-    }
-
-    .cart-products .item{
-        display: flex;
-        align-items: center;
-        border-bottom: solid 1px #b2709f;
-        padding: 2%;
-    }
-
-    .cart-products .item .item-content{
-        padding: 2%;
-    }
-    .cart-products .item .item-content h5{
-        margin: 0;
-        font-size: 0.9rem;
-        font-weight: 400;
-        line-height: 1.4rem;
-    }
-    .cart-products .item .item-content h6{
-        margin: 0;
-        font-size: 0.8rem;
-        font-weight: 400;
-        padding-top: 4%;
-    }
-    .cart-products .item span{
-        background-color: red;
-        padding: 2px 6px;
-        border-radius: 50%;
-        color: #fff;
-        cursor: pointer;
-    }
-    .cart-products h3{
-        margin-bottom: 0;
-    }
-    .cart-products .item .item-content h5.cart-price{
-        font-weight: 700;
-    }
-
-    .carrito-item-cantidad {
-        width: 20px;
-        text-align: center;
-    }
-
-    .price-total {
-        font-size: 1rem;
-    }
-
-    .btn-pagar {
-        background-color: #b2709f;
-        text-decoration: none;
-        color: white;
-        padding: 4% 6% 4% 6%;
-        text-align: center;
-        margin-bottom: 5%;
-        border-radius: 10px;
-    }
-
-    .toPay {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-around;
-        padding-top: 3%;
-    }
-
-    .toPay h2 {
-        font-size: 1.2rem;
-        padding-top: 4%;
-    }
-
-        /*----boton cerrar carrito----*/
-
-    p.close-btn{
-        background-color: #D9d9d9;
-        top: -10px;
-        right: 6px;
-        cursor: pointer;
-        color: #000;
-        padding: 0px 5px;
-    }
-    p.author {
-        display: flex;
-        justify-content: center;
-        margin-top: 3%;
-        gap: 7px;
-    }
     p.author a {
         text-decoration: none;
         font-weight: 700;
         color: #000;
     }
 
-
-    /*----------SERVICIOS----------*/
 
     .btnMobileServices {
         padding: 10% 5% 10% 5%;
@@ -253,14 +108,7 @@ p {
         align-content: center;
     }
 
-    .buttonsMobile {
-        margin: 5% 0 5% 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 20px;
-    }
-
+    
     .btnMobile {
         background-color: black;
         border: 1px solid black;
@@ -286,171 +134,8 @@ p {
     }
 
 
-    .servicios {
-        display: none;
-    }
 
-
-    /*----------PRODUCTOS--------- */
-
-    .productos {
-        padding: 10% 4% 10% 4%;
-        background-color: white;
-    }
-
-    .contenedorProductos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 5%;
-        padding: 2% 0 8% 0;
-        /* oculto lo que queda fuera del .contenedor */
-        contain: paint;
-    }
-
-    .products{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .carts {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: 10px;
-        margin-bottom: 5%;
-        padding: 5%;
-        transition: .3s;
-        background-color: #D9D9D9;
-    }
-
-    .img-item {
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 5%;
-    }
-
-    .title{
-        display: block;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        padding-bottom: 2%;
-    }
-
-    .precio-item{
-        display: block;
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    .btn-add-cart {
-        display: block;
-        border: none;
-        background-color: #b2709f;
-        color: #fff;
-        padding: 4% 6%;
-        border-radius: 10px;
-        font-size: 1rem;
-        text-decoration: none;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    /*----------FORMULARIO--------- */
-
-    .containerForm {
-        padding: 10% 4% 10% 4%;
-    }
-
-    .form-control {
-        display: flex;
-        flex-direction: column;
-        margin: 5%;
-    }
-
-    .form-control label {
-        padding-bottom: 2%;
-        font-size: 1rem;
-    }
-
-    .form-control input {
-        height: 30px;
-        border-radius: 10px;
-        border: 2px solid #D7C2C2;
-        opacity: 0.8;
-    }
-
-    .form-control input:focus {
-        outline: 0;
-        border-color: #8e44ad;
-    }
-
-    .form-control.success input {
-        border-color: #2ecc71;
-    }
-
-    .form-control.error input {
-        border-color: #e74c3c;
-    }
-
-    .form-control i {
-        visibility: hidden;
-        position: absolute;
-        top: 40px;
-        right: 10px;
-    }
-
-    .form-control.success i.fa-check-circle {
-        color: #2ecc71;
-        visibility: visible;
-    }
-
-    .form-control.error i.fa-exclamation-circle {
-        color: #e74c3c;
-        visibility: visible;
-    }
-
-    .form-control small {
-        color: #e74c3c;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        visibility: hidden;
-    }
-
-    .form-control.error small {
-        visibility: visible;
-    }
-
-    .form button {
-        background-color: black;
-        border: 2px solid black;
-        border-radius: 10px;
-        color: #fff;
-        display: block;
-        font-size: 1rem;
-        padding: 2% 4% 2% 4%;
-        margin: auto;
-        width: 90%;
-    }
-
-    .mensaje {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-
-    textarea {
-        border-radius: 10px;
-        border: 2px solid #D7C2C2;
-        opacity: 0.8;
-        width: 100%;
-        height: 300px;
-        padding: 2%;
-    }
-
+    
     /*----------FOOTER--------- */
 
     footer {
@@ -461,22 +146,12 @@ p {
     }
     
 
-    footer p {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
-        padding-bottom: 4%;
-    }
-
     footer ul li {
         font-size: 0.9rem;
     }
 
     .footer-derecha {
         padding-top: 5%;
-    }
-
-    .footer-menu {
-        padding-left: 5%;
     }
 
     .footer-media {
@@ -489,481 +164,241 @@ p {
         color: black;
         font-size: 1.5rem;
     }
-}
 
-/*fin movil*/
-
-
-/*ESCRITORIO*/
-
-@media (min-width: 577px)  {
-
-    h3 {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        text-align: left;
-    }
-    
-    /*------MENU DESKTOP------*/
-
-    .hamburguesa {
-        display: none;
-    }
-
-    #check {
-        display: none;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
-        background: #D7C2C2;
-        height: 150px;
-    }	
-
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        gap: 60px;
-        list-style: none;
-        z-index: 2;
-        margin-top: 70px;
-        margin-left: 160px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-    }
-
-    li a.active,
-    li a:hover {
-        color: #B2709F;
-        transition: .2s;
-    }
-
-    .logo {
-    margin: 20%;
-    border-radius: 100px;
-    }
-    
-    .search {
-        border-radius: 10px;
-        padding: 5px;
-        border: 2px solid #D7C2C2;
-        width: 200px;
-    }
-
-    .header-section{
-        display: flex;
-        justify-content: flex-end;
-        margin: auto;
-        align-items: center;
-        position: relative;
-    }
-
-    .header-section div{
-        position: relative;
-    }
-
-    .header-section p{
-        position: absolute;
-        top: 1px;
-        right: 1px;
-        background-color: #fff;
-        padding: 1px 6px;
-        border-radius: 50%;
-        color: #b2709f;
-        font-weight: 700;
-        line-height: 18px;
-    }
-
-    .cart-products{
-        position: absolute!important;
-        top: 82px;
-        right: 10px;
-        background-color: #fff;
-        padding: 0 18px;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
-        display: none;
-        min-width: 290px;
-        border-radius: 10px;
-    }
-    
-    .cart:hover{
-        margin-bottom: 16px;
-        transition-duration: .5s;
-    }
-
-    /*float cart*/
-    .cart-products .item img{
-        width: 100px;
-    }
-
-    .cart-products .item{
-        display: flex;
-        align-items: center;
-        border-bottom: solid 2px #b2709f;
-        padding: 2% 0;
-    }
-
-    .cart-products .item .item-content{
-        margin: 0 60px;
-        width: 200px;
-        padding: 2%;
-    }
-    .cart-products .item .item-content h5{
-        margin: 0;
-        font-size: 15px;
-        font-weight: 400;
-    }
-
-    .cart-products .item .item-content h6{
-        margin: 0;
-        font-size: 13px;
-        font-weight: 400;
-    }
-
-    .cart-products .item span{
-        background-color: red;
-        padding: 0px 5px;
-        border-radius: 50%;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .cart-products h3{
-        margin-bottom: 0;
-    }
-
-    .cart-products .item .item-content h5.cart-price{
-        font-weight: 700;
-    }
-
-    .carrito-item-cantidad {
-        width: 20px;
-        text-align: center;
-    }
-
-    .btn-pagar {
-        background-color: #b2709f;
-        text-decoration: none;
-        color: white;
-        padding: 2% 5% 2% 5%;
-        text-align: center;
-        margin-bottom: 5%;
-        border-radius: 10px;
-    }
-
-    .toPay {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-around;
-        padding-top: 3%;
-        
-    }
-
-    p.close-btn{
-        background-color: #D9d9d9;
-        top: -10px;
-        right: 6px;
-        cursor: pointer;
-        color: #000;
-        padding: 0px 5px;
-    }
-
-    p.author {
-        display: flex;
-        justify-content: center;
-        margin-top: 3%;
-        gap: 7px;
-    }
-
-    p.author a {
-        text-decoration: none;
-        font-weight: 700;
-        color: #000;
-    }
-
-    
-    /*------SERVICIOS------*/
-
-
-    .btnMobileServices {
-        display: none;
-    }
-
-    .servicios {
-        margin: 5% 2% 5% 2%;
-    }
-
-    .contenedor-servicios {
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        padding-top: 2%;   
-    }
-
-    .backgroundService { 
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        background-color: white;
-        padding: 1%;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-
-    .fotoServicios {
-        width: 400px;
-        height: 200px;
-    }
-
-    .backgroundService span {
-        text-align: center;
-        font-size: 1rem;
-        line-height: 2rem;
-    }
-    
-    .backgroundService button {
-        background-color: black;
-        border: 1px solid black;
-        color: white;
-        padding: 4%;
-        border-radius: 10px;
-        font-size: 1rem;
-        cursor: pointer;
-    }
-
-    .backgroundService button:hover {
-        box-shadow: 0 0 10px #666;
-    }
-
-    
-    /*----------PRODUCTOS--------- */
-
-    .productos {
-        background-color: white;
-        padding: 5% 2% 5% 2%;
-    }
-
-    .contenedorProductos    {
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        padding: 2% 0 8% 0;
-        /* oculto lo que queda fuera del .contenedor */
-        contain: paint;
-    }
-
-    .contenedorProductos .products  {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 25px;
-        grid-row-gap: 25px;
-        width: 100%;
-        transition: .3s;
-    }
-
-    .contenedorProductos .products .carts   {
-        /* margin: auto; */
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
-        border-radius: 10px;
-        padding: 8%;
-        transition: .3s;
-        background-color: #D9D9D9;   
-    }
-
-    .contenedorProductos .products .carts .img-item{
-        width: 100%;
-        padding-bottom: 5%;
-        border-radius: 10px;
-    }
-
-    .contenedorProductos .products .carts:hover{
-        box-shadow: 0 0 10px #666;
-    }
-
-    .contenedorProductos .products .carts .title{
-        display: block;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        padding-bottom: 5%;
-    }
-
-    .contenedorProductos .products .carts .precio-item{
-        display: block;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-    
-    .contenedorProductos .products .carts .btn-add-cart{
-        display: block;
-        margin: 10px 30px 0 30px;
-        border: none;
-        background-color: #b2709f;
-        color: #fff;
-        text-align: center;
-        padding: 3%;
-        border-radius: 10px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    .contenedorProductos .products .carts .btn-add-cart:hover {
-        background-color: #b2709f92;
-        color: black;
-    }
-
-    /*--------- FORMULARIO------------- */
-
-    .containerForm {
-        margin: 5% 2% 5% 2%;
-        /* position: relative; */
-        /* width: 80%; */
-        /* margin: 5% auto; */
-        /* padding: 5%; */
-        /* display: flex; */
-        /* flex-direction: column;
-        align-content: center; 
-        justify-content: space-evenly; */
-    }
-    
-    .form {
-        margin: 2% 0;
-        padding: 4% 10% 4% 10%;
-        background-image: url(/Img/fatty-corgi-1QsQRkxnU6I-unsplash.jpg);
-        background-size: cover;
-        background-position: top;
-        border-radius: 10px;
-        
-    }
-
-    .form-control {
-        padding-bottom: 2%;
-        /* position: relative; */
-    }
-
-    .form-control input {
-        /* display: block; */
-        font-size: 1rem;
-        padding: 15px;
-        width: 100%;
-        border: 3px solid #D7C2C2;
-        border-radius: 10px;
-        opacity: 0.8;
-        height: 2rem;
-        margin: 1rem;
-    }
-
-    .form-control input:focus {
-        outline: 0;
-        border-color: #8e44ad;
-    }
-
-    .form-control.success input {
-        border-color: #2ecc71;
-    }
-
-    .form-control.error input {
-        border-color: #e74c3c;
-    }
-
-    .form-control i {
-        visibility: hidden;
-        position: absolute;
-        top: 40px;
-        right: 10px;
-    }
-
-    .form-control.success i.fa-check-circle {
-        color: #2ecc71;
-        visibility: visible;
-    }
-
-    .form-control.error i.fa-exclamation-circle {
-        color: #e74c3c;
-        visibility: visible;
-    }
-
-    .form-control small {
-        color: #e74c3c;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        visibility: hidden;
-    }
-
-    .form-control.error small {
-        visibility: visible;
-    }
-
-    .form button {
-        background-color: fuchsia;
-        border: 1px solid fuchsia;
-        border-radius: 10px;
-        color: #fff;
-        /* display: block; */
-        padding: 1% 5% 1% 5%;
-        font-size: 1rem;
-        /* margin-top: 10px; */
-        /* width: 50%; */
-        cursor: pointer;
-    }
-
-    input#email.email {
-        margin-left: 20px;
-    }
-
-    input#telefono {
-        margin-left: 20px;
-    }
-
-    .mensaje {
-        display: flex;
-        flex-direction: column;
-        align-content: left;
-        gap: 15px;
-    }
-
-    textarea {
-        border-radius: 10px;
-        margin-left: 20px;
-        border: 3px solid #D7C2C2;
-        opacity: 0.8;
-        width: 100%;
-        height: 400px;
-        font-size: 1rem;
-        padding: 1%;
-    }
-
-    /*----------Footer-------*/
-    
-    footer {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        background-color: #D9D9D9;
-        padding: 5%;
-    }
-
-    .footer-menu {
-        padding-left: 2%;
-    }
-
-    .fa-brands {
-        padding-top: 2%;
-        color: black;
-        font-size: 1.5rem;
-    }
+/* .carousel-container {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+  } */
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .carousel img {
+    width: 390px;
+    height: auto;
+  }
+  body {
+    background-color: #f5f5f5;
+  }
+  
+  /SEARCH/
+  .services_search {
+    width: 90%; 
+    max-width: 500px;
+    margin: 40px 0; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 20px;
+    font-size: 16px; 
+  }
+  
+  /CARD/
+  article{
+    margin: 20px;
+  }
+  #card_services_container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  /* Estilos para los elementos generales de información */
+  .card_services_general_info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Estilos para el contenedor de los checkboxes */
+  .card_services_checbox_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Estilos para los checkboxes y sus etiquetas */
+  .card_services_checbox_container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  /* Estilos para el contenedor del perfil */
+  .card_services_profile_container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Estilos para la imagen del perfil */
+  .card_services_profile_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para el contenedor de la descripción */
+  .card_services_description_container {
+    margin: 10px 0;
+  }
+
+  /* Estilos para el contenedor de los likes */
+  .card_services_likes_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
  
-}
 
-/*Fin Escritorio*/
+  /* Estilos para el botón de contacto */
+  .card_services_button_contact {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /* section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card_services_general_info{
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    #card_services_container {
+      max-width: 400px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+  
+    /Estilos para la imagen de perfil /
+  .card_services_profile_img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+  }
+  
+  .card_services_profile_container {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  
+  .card_services_profile_container div {
+      margin-left: 10px;
+  }
+  
+  .card_services_profile_container p{
+      line-height: 2px;
+  }
+  
+    / Estilos para la ubicación /
+    #card_services_location_icon {
+      width: 16px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  
+    / Estilos para las grandes familias (checkboxes) /
+   .card_services_checbox_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 20px 0;
+  } 
+    / Estilos para el área de texto descriptivo /
+  
+  .card_services_description_container{
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+  
+  }
+  p {
+      margin: 10px 0;
+  } */
+  
+    / Estilos para el contenedor likes y boton */
+  
+    .card_services_likes_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 300px; /* Ajusta el ancho según tus necesidades */
+        margin: 10px auto; /* Para centrar horizontalmente, puedes ajustar los márgenes según el diseño deseado */
+      }
+      
+      .card_services_likes_container svg {
+        width: 24px; /* Ajusta el tamaño del icono según tus necesidades */
+        height: 24px;
+        margin-right: 5px;
+      }
+      
+      .card_services_likes_counter {
+        font-size: 16px;
+        color: #333;
+      }
+      
+      .card_services_button_contact {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .card_services_button_contact:hover {
+        background-color: #555;
+      }
+    h1 {
+        margin: 0;
+      }
+      
+      .search-container {
+        display: flex;
+        align-items: center;
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+      
+      input[type="text"] {
+        flex: 1;
+        padding: 5px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+      }
+      
+      button {
+        background-color: #444;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #555;
+      }
