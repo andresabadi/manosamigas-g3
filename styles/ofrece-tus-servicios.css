@@ -19,7 +19,7 @@ h1 {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-   width: 80%;
+    width: 80%;
     margin: 20%;
 }
 
@@ -41,18 +41,25 @@ button[type="submit"] {
     padding: 10px;
     margin-top: 10px;
     cursor: pointer;
-    color:red;
+    
     margin-left: 50%;
 }
 
-#notification {
+/*.notification {
     display: none;
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #4695ca;
+    color: #871a1a;
     padding: 10px;
     text-align: center;
-}
+    position: relative;
+    bottom: -60px; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+  }*/
+  /* Estilos para el cuadro de diálogo personalizado */
 
+  
 .hidden {
     display: none;
 }
@@ -74,7 +81,21 @@ button[type="submit"] {
         padding: 10px;
         width: 80%;
     }
-    
+    .notification {
+        display: block;
+      }
+      .custom-alert {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #4695ca;
+        color: #fff;
+        border-radius: 5px;
+        z-index: 999;
+      }
 }
 
 
