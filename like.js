@@ -30,5 +30,5 @@ function showNotification(message) {
   // Eliminar la notificación después de 3 segundos
   setTimeout(() => {
     notification.remove();
-  }, 3000);
+  }, 6000);
 }
