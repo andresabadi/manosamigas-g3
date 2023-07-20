@@ -18,7 +18,7 @@ h1 {
 .serviceForm {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: fit-content;
     width: 80%;
     margin: 20%;
 }
@@ -76,7 +76,6 @@ button[type="submit"] {
     }
 
     .serviceForm {
-
         margin-left: 20%;
         padding: 10px;
         width: 80%;
@@ -97,6 +96,7 @@ button[type="submit"] {
         z-index: 999;
       }
 }
+
 
 
 

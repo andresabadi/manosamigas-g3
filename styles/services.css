@@ -146,6 +146,54 @@ p {
     font-weight: bold;
     color: #ef1783;
   } 
+  .post {
+    margin-bottom: 10px;
+  }
+  
+  .like-button {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .like-button.liked .icon {
+    color: #ff0000;
+    font-size: 67px;
+  }
+  
+  .notifications {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .notifications h2 {
+    margin-top: 0;
+  }
+  
+  .icon{
+    width: 70px;
+    height: 70px;
+  }
+  
+  .like-button .icon {
+    font-size: 67px;
+    color: #000;
+    transition: color 0.3s;
+  }
+  
+  .like-button.liked .icon {
+    color: #ff0000;
+  }
+  li{
+    font-size: 25px;
+    font-weight: bold;
+  }
 
  /* .card_services_button_contact:hover {
     background-color: #f5f5f5;
