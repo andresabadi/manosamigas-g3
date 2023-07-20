@@ -1,41 +1,9 @@
 /*--------------Estilos generales--------------*/
 
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-}
-
-body {
-    background-color: #D7C2C2;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 2rem;
-    text-align: left;
-}
-/* 
-.footer-ezquierda img {
-    width: 100px;
-    border-radius: 100%;
-    margin-top: 2%;
-} */
-
-.footer-menu {
-    text-decoration: underline;
-    line-height: 2rem;
-}	
-
-
-
 #check {
     display: none;
 }
 
-/*MOVIL*/
-    /*----------MENU MOVIL--------- */
 
     nav {
         display: flex;
@@ -76,6 +44,7 @@ p {
         left: 100%;
         text-align: center;
         transition: all .5s;
+        z-index: 100;
     }
 
     nav ul li {
@@ -138,42 +107,7 @@ p {
         line-height: 2rem;
     }
 
-
-
-    
-    /*----------FOOTER--------- */
-
-    footer {
-        display: flex;
-        justify-content: space-around;
-        background-color: #D9D9D9;
-        padding: 5%;
-    }
-    
-
-    footer ul li {
-        font-size: 0.9rem;
-    }
-
-    .footer-derecha {
-        padding-top: 5%;
-    }
-
-    .footer-media {
-        text-align: center;
-        padding-top: 5%;
-    }
-
-    .fa-brands {
-        padding-top: 2%;
-        color: black;
-        font-size: 1.5rem;
-    }
-
-    .img-footer{
-      width: 80px;
-    }
-
+  
 /* .carousel-container {
     width: 300px;
     margin: 0 auto;
@@ -183,14 +117,12 @@ p {
   .carousel {
     display: flex;
     transition: transform 0.5s ease;
+    z-index: -100;
   }
 
   .carousel img {
     width: 390px;
     height: auto;
-  }
-  body {
-    background-color: #f5f5f5;
   }
   
   /*SEARCH*/
@@ -210,7 +142,7 @@ p {
   
   
   /*CARD*/
-  article{
+  /*article{
     margin: 20px;
   }
   #card_services_container {
@@ -222,25 +154,26 @@ p {
     margin: 20px;
   }
 
-  /* Estilos para los elementos generales de información */
+
   .card_services_general_info {
     display: flex;
     justify-content: space-between;
   }
 
-  /* Estilos para el contenedor de los checkboxes */
+ 
   .card_services_checbox_container {
     display: flex;
     flex-direction: column;
-  }
+  } 
 
-  /* Estilos para los checkboxes y sus etiquetas */
+ 
+  
   .card_services_checbox_container label {
     display: block;
     margin-bottom: 5px;
   }
 
-  /* Estilos para el contenedor del perfil */
+
   .card_services_profile_container {
     margin-top: 10px;
     display: flex;
@@ -248,7 +181,7 @@ p {
     align-items: center;
   }
 
-  /* Estilos para la imagen del perfil */
+
   .card_services_profile_img {
     width: 100px;
     height: 100px;
@@ -256,12 +189,12 @@ p {
     margin-bottom: 10px;
   }
 
-  /* Estilos para el contenedor de la descripción */
+
   .card_services_description_container {
     margin: 10px 0;
   }
 
-  /* Estilos para el contenedor de los likes */
+
   .card_services_likes_container {
     display: flex;
     justify-content: space-between;
@@ -269,16 +202,15 @@ p {
   }
  
 
-  /* Estilos para el botón de contacto */
   .card_services_button_contact {
     padding: 8px 12px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: pointer; 
   }
-  /* section {
+   section {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -346,9 +278,9 @@ p {
   }
   p {
       margin: 10px 0;
-  } */
+  } 
   
-    /* Estilos para el contenedor likes y boton */
+   
   
     .card_services_likes_container {
         display: flex;
@@ -358,12 +290,12 @@ p {
         border-radius: 10px;
         padding: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        max-width: 300px; /* Ajusta el ancho según tus necesidades */
-        margin: 10px auto; /* Para centrar horizontalmente, puedes ajustar los márgenes según el diseño deseado */
+        max-width: 300px; 
+        margin: 10px auto; 
       }
       
       .card_services_likes_container svg {
-        width: 24px; /* Ajusta el tamaño del icono según tus necesidades */
+        width: 24px; 
         height: 24px;
         margin-right: 5px;
       }
@@ -415,4 +347,41 @@ p {
       
       button:hover {
         background-color: #555;
-      }
+      }*/
+
+       /*----------FOOTER--------- */
+    .footer-menu {
+      text-decoration: underline;
+      line-height: 2rem;
+  }	
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        background-color: #D9D9D9;
+        padding: 5%;
+    }
+    
+
+    footer ul li {
+        font-size: 0.9rem;
+    }
+
+    .footer-derecha {
+        padding-top: 5%;
+    }
+
+    .footer-media {
+        text-align: center;
+        padding-top: 5%;
+    }
+
+    .fa-brands {
+        padding-top: 2%;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .img-footer{
+      width: 80px;
+    }
