@@ -15,7 +15,7 @@ body{
 
 h1{
     font-size: 2rem;
-    color:var(--color-azul)
+    /* color:var(--color-azul) */
 }
 
 h2{
@@ -32,12 +32,12 @@ h3{
 
 p {
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 5rem;
     text-align: left;
 }
 
 input {
-    border-radius: 50px;
+    border-radius: 8px;
     border: 1px solid #000;
     background: #FFF;
     box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);

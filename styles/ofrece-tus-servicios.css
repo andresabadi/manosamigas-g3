@@ -11,6 +11,7 @@ body {
     padding: 20px;
 }
 
+
 h1 {
     text-align: center;
 }
@@ -41,8 +42,12 @@ button[type="submit"] {
     padding: 10px;
     margin-top: 10px;
     cursor: pointer;
-    
-    margin-left: 50%;
+    background-color: var(--color-rosa);
+    color: var(--body-bg-color);
+    font-weight: bold;
+    border-radius: 8px;
+    /* margin-left: 40%; */
+    width: 100%;
 }
 
 /*.notification {
@@ -64,7 +69,7 @@ button[type="submit"] {
     display: none;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     body {
         margin: 20px;
         display: flex;
@@ -95,7 +100,7 @@ button[type="submit"] {
         border-radius: 5px;
         z-index: 999;
       }
-}
+} */
 
 
 
