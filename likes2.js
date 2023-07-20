@@ -10,7 +10,7 @@ function toggleLike() {
     hasLiked = true;
     likeButton.classList.add('liked');
     likesCount++;
-    showNotification('¡Has valorado positivamente a un profesional!');
+    showNotification('¡Has valorado positivamente al trabajador!');
   }
 //   else {
 //     hasLiked = false;

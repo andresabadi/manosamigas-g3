@@ -236,3 +236,7 @@ p {
 .like-button.liked .icon {
   color: #ff0000;
 }
+li{
+  font-size: 25px;
+  font-weight: bold;
+}
