@@ -144,6 +144,56 @@ p {
     font-weight: bold;
     box-shadow: 0 2px 4px #00000050;
   } */
+  .post {
+    margin-bottom: 10px;
+  }
+  
+  .like-button {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .like-button.liked .icon {
+    color: #ff0000;
+    font-size: 67px;
+  }
+  
+  .notifications {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .notifications h2 {
+    margin-top: 0;
+  }
+  
+  .icon{
+    width: 70px;
+    height: 70px;
+  }
+  
+  .like-button .icon {
+    font-size: 67px;
+    color: #000;
+    transition: color 0.3s;
+  }
+  
+  .like-button.liked .icon {
+    color: #ff0000;
+  }
+  li{
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
 
 
 
