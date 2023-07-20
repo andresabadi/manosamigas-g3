@@ -3,6 +3,7 @@ let hasLiked = false;
 const likeButton = document.querySelector('.like-button');
 const likesCountElement = document.querySelector('.likes-count');
 const notificationsList = document.getElementById('notifications-list');
+const notificationMessage = document.querySelector('.notification-message');
 
 likeButton.addEventListener('click', toggleLike);
 
@@ -11,24 +12,26 @@ function toggleLike() {
     hasLiked = true;
     likeButton.classList.add('liked');
     likesCount++;
+    updateLikes();
     showNotification('¡Has valorado positivamente al trabajador!');
   } else {
     hasLiked = false;
     likeButton.classList.remove('liked');
     likesCount--;
-    // showNotification('Has quitado tu valoración al trabajador.');
+    updateLikes();
+    hideNotification();
   }
+}
 
+function updateLikes() {
   likesCountElement.textContent = likesCount;
 }
 
 function showNotification(message) {
-  const notification = document.createElement('li');
-  notification.textContent = message;
-  notificationsList.appendChild(notification);
+  notificationMessage.style.display = 'block';
+  notificationMessage.textContent = message;
+}
 
-  // Eliminar la notificación después de 3 segundos
-  setTimeout(() => {
-    notification.remove();
-  }, 3000);
+function hideNotification() {
+  notificationMessage.style.display = 'none';
 }
