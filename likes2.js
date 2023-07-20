@@ -1,22 +1,26 @@
 let likesCount = 0;
+let hasLiked = false;
 const likeButton = document.querySelector('.like-button');
-const likesCountElement = document.querySelector('.likes-count');
 const notificationsList = document.getElementById('notifications-list');
 
 likeButton.addEventListener('click', toggleLike);
 
 function toggleLike() {
-  if (likeButton.classList.contains('liked')) {
-    likeButton.classList.remove('liked');
-    likesCount--;
-  } else {
+  if (!hasLiked) {
+    hasLiked = true;
     likeButton.classList.add('liked');
     likesCount++;
-    showNotification('¡Has valorado al profesional de forma positiva!');
+    showNotification('¡Has valorado positivamente a un profesional!');
   }
+//   else {
+//     hasLiked = false;
+//     likeButton.classList.remove('liked');
+//     likesCount--;
+//   }
+}
+  
 
   likesCountElement.textContent = likesCount;
-}
 
 function showNotification(message) {
   const notification = document.createElement('li');
@@ -26,5 +30,5 @@ function showNotification(message) {
   // Eliminar la notificación después de 3 segundos
   setTimeout(() => {
     notification.remove();
-  }, 7000);
+  }, 3000);
 }
