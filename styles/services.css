@@ -1,5 +1,13 @@
 
 /*SEARCH*/
+.services_search_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
 .services_search {
   width: 90%; 
   max-width: 500px;
@@ -15,6 +23,14 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 50px auto;
+  }
+
+.services_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
   }
   .card_services_general_info{
     display: flex;
@@ -133,19 +149,25 @@ p {
 
 /*QUERIES*/
 
+/* Estilos para dispositivos de tablet con anchura mínima de 1024px */
+@media (min-width: 768px) {
+  .services_container{
+    display: flex;
+  }
+}
 /* Estilos para dispositivos de escritorio con anchura mínima de 1024px */
 @media (min-width: 1024px) {
-  /* Agrega aquí tus estilos específicos para dispositivos de escritorio */
-  body {
-    font-size: 16px; /* Por ejemplo, puedes aumentar el tamaño de fuente para pantallas más grandes */
+  
+  .services_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin: 50px auto;
   }
 
-  .container {
-    max-width: 960px; /* Por ejemplo, puedes limitar el ancho del contenido principal */
-    margin: 0 auto; /* Centrar el contenido horizontalmente */
-  }
-
-  /* Agrega más estilos aquí según tus necesidades */
+ 
 }
 
 
